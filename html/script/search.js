@@ -34,4 +34,35 @@ class Search {
                     if (this.isTrue(i) === 'string' && i !== '') ele[style[0]] = style[1];
                 };
     };
+    switchSearch() {
+        this.txt.placeholder = this.p + '搜索';
+        this.logo.style.backgroundImage = 'url(' + this.img + ')';
+    };
+    startPush() {
+        let get = e => this.$(false, e)[0];
+        this.txt = get('.txt');
+        this.sub = get('.sub');
+        this.logo = get('.search_logo');
+        this.switch = get('.switch_search');
+        this.add(this.anime[0])
+        this.addTo();
+        this.switchSearch();
+    };
+    open() {
+        if (this.txt.value) window.open(this.search + this.txt.value);
+    }
+    add(e) {
+        if (this.p !== e.p) {
+            for (let i in e) this[i] = e[i];
+            this.switchSearch();
+        } else window.open(this.https);
+    }
+    addTo() {
+        this.anime.forEach(e => {
+            this.switch.appendChild(
+                this.$('li', [this.$('img', false, ['src', e.img]), this.$('p', e.p)], ['onclick', () => { this.add(e) }])
+            );
+        });
+        this.sub.addEventListener('click', () => this.open());
+    }
 };

@@ -30,8 +30,30 @@
     }
 }
 
-@media (max-height:700px) {
+@media (min-width:360px) {
+    main .switch_search {
+        width: 100%;
+    }
+}
+
+@media (max-height:800px) {
     header {
         max-width: 240px;
+    }
+    .love2D {
+        display: none;
+    }
+}
+
+@media (max-height:600px) {
+    main .m_search .search_top .search {
+        bottom: 10%;
+    }
+    main .m_search .search_top {
+        height: 40%;
+    }
+    main .search_logo {
+        width: 70px;
+        height: 70px;
     }
 }

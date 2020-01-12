@@ -1,5 +1,5 @@
 (() => {
-    let search = new Search({
+    let search = new Search([{
         https: 'https://www.dongmanhuayuan.com',
         search: 'https://www.dongmanhuayuan.com/search/',
         p: '动漫花园',
@@ -24,11 +24,14 @@
         search: 'http://www.acgsou.com/search.php?keyword=',
         p: 'ACG搜',
         img: 'http://www.acgsou.com/favicon.ico'
-    });
+    }]);
     let animeDiv = function() {
         let div = search.$('div');
         let isTrue = false;
-        setInterval(() => { div.style.height = Math.random() * 100 + 'px'; }, 400);
+        let time = setInterval(() => {
+            div.style.height = Math.random() * 100 + 'px';
+            if (document.readyState === 'complete') clearTimeout(time);
+        }, 400);
         return div;
     };
     let div = new Array();
@@ -38,13 +41,18 @@
     ], document.body);
     document.onreadystatechange = function() {
         if (document.readyState === 'interactive') {
-
+            search.startPush();
         } else if (document.readyState === 'complete') {
-            load.remove();
+            let i = 100;
+            let time = setInterval(() => {
+                if (i > 0) {
+                    i--;
+                    load.style.opacity = i / 100;
+                } else {
+                    clearInterval(time);
+                    load.remove();
+                }
+            }, 8)
         };
     };
-    // document.addEventListener('DOMContentLoaded', () => {
-    //     console.log(search.$(false, '.search'))
-    //     console.log(document.readyState)
-    // });
-})()
+})();
