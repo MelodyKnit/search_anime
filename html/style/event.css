@@ -1,0 +1,46 @@
+#h_list:checked~.h_list,
+#h_list:checked~.h_list::after,
+#h_list:checked~.h_list::before {
+    background: rgb(60, 60, 60);
+}
+
+#h_list:checked~.bg {
+    display: block;
+}
+
+#h_list:checked~header {
+    width: 70%;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
+}
+
+#h_list:checked~.h_list {
+    top: 30px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+#h_list:checked~.h_list::before {
+    opacity: 0;
+}
+
+#h_list:checked~.h_list::after {
+    top: 0;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+header ul li:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+main .m_search .search_top .search .sub:hover {
+    background: white;
+    border-color: blueviolet;
+}

@@ -1,0 +1,37 @@
+@media (max-width:600px) {
+    body {
+        background: url(../image/background/4.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+    .love2D {
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+    }
+}
+
+@media (max-width:1200px) and (min-width:600px) {
+    body {
+        background: url(../image/background/2.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+@media (min-width:1200px) {
+    body {
+        background: url(../image/background/3.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+@media (max-height:700px) {
+    header {
+        max-width: 240px;
+    }
+}

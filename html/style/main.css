@@ -1,0 +1,48 @@
+main {
+    display: flex;
+}
+
+main .m_search .search_top {
+    height: 45%;
+}
+
+main .m_search .search_top .search {
+    bottom: 80px;
+    height: 40px;
+    margin: 0 auto;
+    text-align: left;
+    max-width: 800px;
+    position: absolute;
+    border-radius: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.7);
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+main .m_search .search_top .search .txt {
+    border: none;
+    outline: none;
+    font-size: 20px;
+    background: none;
+    list-style: none;
+    padding-left: 20px;
+    width: calc(100% - 60px);
+}
+
+main .m_search .search_top .search .sub {
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-top: 5px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    border: 4px solid black;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}

@@ -1,0 +1,97 @@
+body {
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+}
+
+body,
+header ul,
+header ul li,
+main .m_search .search_top .search .txt {
+    margin: 0;
+}
+
+header ul,
+header ul li,
+main .m_search .search_top .search .txt {
+    padding: 0;
+}
+
+body,
+main .m_search .search_top {
+    position: relative;
+}
+
+.bg,
+html,
+body,
+main,
+header,
+.loading,
+main .m_search,
+main .m_search .search_top .search .txt {
+    height: 100%;
+}
+
+.bg,
+.loading,
+main .m_search,
+main .m_search .search_top .search {
+    width: 100%;
+}
+
+header,
+.h_list,
+.loading div,
+.h_list::after,
+.h_list::before,
+main .m_search .search_top .search .sub {
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+.h_list,
+header ul li,
+main .m_search .search_top .search .sub {
+    cursor: pointer;
+}
+
+.bg,
+header,
+.h_list,
+.loading {
+    position: fixed;
+}
+
+#h_list {
+    display: none;
+}
+
+.h_list {
+    display: inline-block;
+}
+
+.h_list::after,
+.h_list::before {
+    position: absolute;
+}
+
+header ul li span {
+    white-space: nowrap;
+}
+
+header .community,
+main .m_search .search_top .search {
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+main .m_search {
+    text-align: center;
+}

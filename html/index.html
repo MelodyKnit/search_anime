@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="image/logo/logo.png">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/event.css">
+    <link rel="stylesheet" href="style/media.css">
+    <link rel="stylesheet" href="live2d/css/live2d.css">
+    <script src="script/search.js"></script>
+    <title>动漫爱好者协会</title>
+</head>
+
+<body>
+    <div class="love2D">
+        <div class="message" style="opacity:1"></div>
+        <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+    </div>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        var message_Path = '/live2d/'
+        var home_Path = 'https://haremu.com/'
+    </script>
+    <script type="text/javascript" src="live2d/js/live2d.js"></script>
+    <script type="text/javascript" src="live2d/js/message.js"></script>
+    <script type="text/javascript">
+        loadlive2d("live2d", "/live2d/model/tia/model.json");
+    </script>
+    <script src="script/loading.js"></script>
+    <input type="checkbox" id="h_list">
+    <label for="h_list" class="h_list"></label>
+    <label for="h_list" class="bg"></label>
+    <header>
+        <ul>
+            <li>
+                <div class="h_icon">
+                    <img class="h_img" src="image/icon/home.png">
+                </div>
+                <span>首页</span>
+            </li>
+            <li>
+                <div class="h_icon">
+                    <img class="h_img" src="image/icon/up.png">
+                </div>
+                <span>申请添加BT网站</span>
+            </li>
+            <li>
+                <div class="h_icon">
+                    <img class="h_img" src="image/icon/pen.png">
+                </div>
+                <span>对我们进行建议</span>
+            </li>
+
+            <li onclick="window.open('\/\/shang.qq.com\/wpa\/qunwpa?idkey=d5ee1868deeb2f2e771c22f8dfcb7255b8cee239d5e7b894694d5f0a68dbd788')">
+                <div class="h_icon">
+                    <img class="h_img" src="image/icon/mqs.png">
+                </div>
+                <span>加入我们设计交流</span>
+            </li>
+            <li>
+                <div class="h_icon">
+                    <img class="h_img" src="image/icon/money.png">
+                </div>
+                <span>对我们进行支持</span>
+            </li>
+        </ul>
+        <img class="community" src="image/background/community.png">
+    </header>
+    <main>
+        <section class="m_search">
+            <div class="search_top">
+                <section class="search">
+                    <input type="text" class="txt">
+                    <div class="sub"></div>
+                </section>
+            </div>
+            <div class="search_bottom"></div>
+        </section>
+    </main>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

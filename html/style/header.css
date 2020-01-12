@@ -1,0 +1,117 @@
+header {
+    width: 0;
+    z-index: 8;
+    overflow: hidden;
+    max-width: 300px;
+}
+
+.love2D {
+    user-select: none;
+    position: fixed;
+    right: 20px;
+    bottom: 0;
+    width: 280px;
+    height: 250px;
+    font-size: 0;
+    transition: all .3s ease-in-out;
+}
+
+.loading {
+    display: flex;
+    z-index: 1000;
+    background: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading div {
+    width: 10px;
+    height: 1px;
+    margin: 0 10px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.h_list {
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    width: 30px;
+    height: 5px;
+}
+
+.h_list::after,
+.h_list::before {
+    left: 0;
+    width: 100%;
+    content: '';
+    height: 100%;
+    position: absolute;
+}
+
+.h_list,
+.h_list::after,
+.h_list::before {
+    background: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.h_list::after {
+    top: 20px;
+}
+
+.h_list::before {
+    top: 10px;
+}
+
+.bg {
+    z-index: 6;
+    display: none;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+header ul {
+    list-style: none;
+    margin-top: 65px;
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+header ul li {
+    height: 50px;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+header ul,
+header ul li {
+    border-width: 1px;
+}
+
+header ul li .h_icon {
+    width: 23%;
+    height: 100%;
+    display: flex;
+    max-width: 70px;
+    align-items: center;
+    justify-content: center;
+}
+
+header ul li .h_img {
+    height: 40%;
+    margin: 0 22px;
+}
+
+header .community {
+    width: 80%;
+    bottom: 5%;
+    max-width: 160px;
+    position: absolute;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
